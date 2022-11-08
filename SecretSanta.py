@@ -2,14 +2,6 @@
 import random
 from collections import deque
 
-names = [
-	"Brandon",
-	"Bart",
-	"Matt",
-	"Dylan",
-	"Panos",
-]
-
 def match(list):
 	if len(list) <= 1:
 		return
@@ -29,6 +21,12 @@ def writeToIndividualFiles(matches):
 		with open(key + ".txt", mode = "w") as f:
 			f.write(key + ", you got " + matches[key])
 
-matches = match(names)
-writeToFile(matches)
-writeToIndividualFiles(matches)
+def genSecretSantas():
+	names = [item for item in input("Enter participant names separated by spaces: ").split()]
+
+	matches = match(names)
+	writeToFile(matches)
+	writeToIndividualFiles(matches)
+
+# Run main func
+genSecretSantas()
