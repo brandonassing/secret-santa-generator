@@ -1,10 +1,10 @@
 # Secret Santa Generator
 
-## Purpose
+## Description
 
 This script takes a list of names and pairs them up for Secret Santa. It generates a list of `.txt` files for distributing to the participants, preventing the organizer (you!) from having to see who got who.
 
-## To use
+## Steps
 
  1. Download the script and update the names listed under `names` to reflect the participants, including the yourself.
  2. Run the script (ie: `$ python3 SecretSanta.py`). A `.txt` file per name should be generated, along with a `Matches.txt` file containing all of the pairings.

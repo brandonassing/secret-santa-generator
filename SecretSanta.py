@@ -7,7 +7,7 @@ names = [
 	"Bart",
 	"Matt",
 	"Dylan",
-	"Panos"
+	"Panos",
 ]
 
 def match(list):
@@ -28,7 +28,6 @@ def writeToIndividualFiles(matches):
 	for key in matches:
 		with open(key + ".txt", mode = "w") as f:
 			f.write(key + ", you got " + matches[key])
-
 
 matches = match(names)
 writeToFile(matches)
